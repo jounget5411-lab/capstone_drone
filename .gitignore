@@ -1,0 +1,60 @@
+# === Vivado/Vitis 로그·캐시 ===
+*.jou
+*.log
+*.str
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+*.ltx
+vivado_*.backup.*
+
+# === Vitis 워크스페이스: BSP 통째로 제외 ===
+# bsp 폴더 (자동 생성, Vitis가 재생성 가능)
+**/bsp/
+**/zynq_fsbl/
+**/sdt/
+.rigel_lopper/
+
+# Vitis IDE 작업 캐시
+**/_ide/
+**/.metadata/
+**/RemoteSystemsTempFiles/
+
+# 빌드 산출물
+**/Debug/
+**/Release/
+*.elf
+*.o
+*.d
+
+# Vitis 프로젝트 설정 (PC마다 경로 다름)
+**/.cproject
+**/.project
+**/.settings/
+**/.clangd
+**/compile_commands.json
+
+# === FPGA bitstream (필요시 주석 처리) ===
+*.bit
+
+# === 보존: xsa는 일부러 안 막음 (합성 결과물, 백업 가치) ===
+
+# === Python ===
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.pth
+
+# === 데이터셋 ===
+data/
+*.npy
+*.npz
+
+# === Windows ===
+Thumbs.db
+desktop.ini
